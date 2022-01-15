@@ -3,8 +3,20 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: 0px;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px; 
+    
+}
+.Container{
+    width: 1700px; 
+}
+
 .all-h1{
     color:#3A3A3A ;
     font-size: 40px;
@@ -22,17 +34,21 @@ body{
 
 /* header */
 
+
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 60px;
+    
+    
 }
 nav a{
     text-decoration: none;
     color: #3A3A3A;
-    font-size: 1.3em;
+    font-size: 1.8em;
     margin-right: 15px;
+    
 }
 nav a:hover{
     color: #E02C6D;
@@ -42,11 +58,23 @@ nav a:hover{
 
 /* section 1 */
 .Journey{
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
 }
 .half-width{
-    width: 50%;
-    padding: 50px;
+   margin: 80px;
+    padding: 20px;
+}
+.half-width img{
+    margin-left: 180px;
+    transition: width 3s, 3s, transform 3s;
+}
+.half-width img:hover{
+    
+    transform: rotate(360deg);
 }
 
 .link-border{
@@ -56,6 +84,9 @@ nav a:hover{
     color: white;
     font-size: 20px;
     border-radius: 30px;
+}
+.link-border i{
+    color: white;
 }
 .link-border:hover{
     color: #3A3A3A;
@@ -79,7 +110,7 @@ hr{
 .all-logo img{
    align-items: center;
     text-align: center;
-    margin: 20px;
+    margin: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -131,5 +162,93 @@ p{
     padding: 20px;
     border-radius: 10px;
 }
+
+
+/* see more */
+
+.see-moree{
+    text-decoration: none;
+    color: #E02C6D;   
+    margin: 30px;
+}
+
+
+/* main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} */
+/* .Container{
+    width: 900px;
+    justify-content: center;
+}
+.Container-1{
+    width: 1500px;
+    align-items: center;
+} */
+
+
+
+
+/* .new-item{
+    display: flex;
+} */
+
+
+.extra-work{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.extra-img{
+    margin: 80px;
+    padding: 20px;
+}
+
+
+.join-naw a{
+    text-decoration: none;
+    color: white ;
+    background-color: #E02C6D;
+    padding: 10px 30px;
+}
+.join-naw i{
+    margin-left: 8px;
+}
+.join-naw a:hover{
+    color: black;
+}
+
+
+
+/* footer */
+.footer{
+    background-color: #130f40;
+    color: #FFFFFF;
+    padding: 80px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer-icon a{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 30px;
+}
+.Influencer{
+    font-size: 30px;
+}
+
+
+
+
+
+
 
 
